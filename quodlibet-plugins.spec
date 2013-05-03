@@ -2,21 +2,27 @@
 Summary:	Quod Libet plugins
 Summary(pl.UTF-8):	Wtyczki dla Quod Libet
 Name:		quodlibet-plugins
-Version:	2.4.1
+Version:	2.5.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://quodlibet.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	eef90c6d24c66f8a243d60fc5fb3e85d
+# Source0-md5:	12581efca296afb569288943b3ffe6e3
 URL:		http://code.google.com/p/quodlibet/
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
-Requires:	quodlibet >= 2.4.1
+Requires:	quodlibet >= 2.5.1
+Requires:	python-pygtk-gtk
 Suggests:	python-CDDB
 Suggests:	python-dbus
-#Suggests:	python-indicate
-#Suggests:	python-lastfm
+Suggests:	python-gnome-vfs
+Suggests:	python-gstreamer
 Suggests:	python-musicbrainz2
+Suggests:	python-mutagen
+Suggests:	python-pycairo
+Suggests:	python-pygtk-pango
+Suggests:	python-pyinotify
+Suggests:	python-zeitgeist
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
