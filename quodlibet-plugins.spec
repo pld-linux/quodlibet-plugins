@@ -2,12 +2,12 @@
 Summary:	Quod Libet plugins
 Summary(pl.UTF-8):	Wtyczki dla Quod Libet
 Name:		quodlibet-plugins
-Version:	2.9.91
-Release:	0.2
+Version:	3.0.0
+Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://quodlibet.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	6192604db6b3ace1754cb0cc100eeee4
+# Source0-md5:	52cffd62915cba963d6b902c9cdae927
 URL:		http://code.google.com/p/quodlibet/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	python-modules >= 2.6
