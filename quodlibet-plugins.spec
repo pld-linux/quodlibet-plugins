@@ -3,7 +3,7 @@ Summary:	Quod Libet plugins
 Summary(pl.UTF-8):	Wtyczki dla Quod Libet
 Name:		quodlibet-plugins
 Version:	3.0.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://quodlibet.googlecode.com/files/%{name}-%{version}.tar.gz
@@ -55,5 +55,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{py_sitedir}/quodlibet/plugins/*/*.py
-%{py_sitedir}/quodlibet/plugins/*/*.py[co]
+%dir %{py_sitedir}/quodlibet/plugins/editing
+%{py_sitedir}/quodlibet/plugins/editing/*.py
+%{py_sitedir}/quodlibet/plugins/editing/*.py[co]
+%dir %{py_sitedir}/quodlibet/plugins/events
+%{py_sitedir}/quodlibet/plugins/events/*.py
+%{py_sitedir}/quodlibet/plugins/events/*.py[co]
+%dir %{py_sitedir}/quodlibet/plugins/playorder
+%{py_sitedir}/quodlibet/plugins/playorder/*.py
+%{py_sitedir}/quodlibet/plugins/playorder/*.py[co]
+%dir %{py_sitedir}/quodlibet/plugins/songsmenu
+%{py_sitedir}/quodlibet/plugins/songsmenu/*.py
+%{py_sitedir}/quodlibet/plugins/songsmenu/*.py[co]
